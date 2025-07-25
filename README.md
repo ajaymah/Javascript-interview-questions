@@ -103,7 +103,8 @@ function sayHellow(){
 }
 ```
 **Example - 4 (Arrow Functions)**   
-```hellow(); // type error : hellow is not a function  //  
+```diff
+hellow(); // type error : hellow is not a function  //  
 var hellow = ()=>{  
 console.log("hellow")  
 }  
