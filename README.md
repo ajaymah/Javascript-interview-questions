@@ -95,8 +95,8 @@ let a = 10;
 The variable a is hoisted but cannot be accessed untill it is declared, This is ther Temporal Dead Zone  
 ```
 **Example - 3 (Functions)**  
-Function are fully hoisted, so you can call them before they are define
-```
+```diff
++ Function are fully hoisted, so you can call them before they are define
 sayHellow() // working //
 function sayHellow(){
    console.log("Hello! Ajay")
@@ -108,12 +108,7 @@ hellow(); // type error : hellow is not a function  //
 var hellow = ()=>{  
 console.log("hellow")  
 }  
-- // hellow is hoisted as undefined //
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+- hellow is hoisted as undefined //
 ```
 
 
