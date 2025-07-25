@@ -71,7 +71,44 @@ outerFunction();
 **why we use closures**  Create Private variables, **Data Privacy**
 
 > NOTE: 
-Data can be hidden from the global scope and only accessed or modified through specific, controlled functions returned by the outer function. 
+Data can be hidden from the global scope and only accessed or modified through specific, controlled functions returned by the outer function.
+
+### What is Hoisting in JavaScript? ###   
+Hoisting is JavaScript default behaviour of moving declerations to the top (before code eecution)  
+***variables and functions are hoisted - declared before any code is executed***  
+But Only the **declarations** are hoisted, not the **initialization**.    
+**Example - 1:**  
+```
+console.log(x); undefined  
+var x = 5  
+-------------------------
+Javascript interprets it like this manually:  
+var x;  
+console.log(x)  
+x = 5;  
+// That`s why you dont get error - just undefined //  
+```
+**Example- 2 (let and const)**  
+```
+console.log(a)  // ReferenceError//  
+let a = 10;  
+The variable a is hoisted but cannot be accessed untill it is declared, This is ther Temporal Dead Zone  
+```
+**Example - 3 (Functions)**  
+Function are fully hoisted, so you can call them before they are define
+```
+sayHellow() // working //
+function sayHellow(){
+   console.log("Hello! Ajay")
+}
+```
+**Example - 4 (Arrow Functions)**   
+```hellow(); // type error : hellow is not a function  //  
+var hellow = ()=>{  
+console.log("hellow")  
+}  
+// hellow is hoisted as undefined //
+```
 
 
 
