@@ -27,6 +27,30 @@ End
 inside timeout  
 
 ```
+### 2- What is JavaScript Callback? ###  
+Callback is a function that passed as an arguments to another function;
+**usecase** - To handle async task(Api calls, timmers).  
+            - avoid blocking the main thread.
+```
+**Example:**
+Function fullname (name, callBackFn){  
+    console.log("Hellow ", name)  
+    callBackFn()  
+}  
+function country(){  
+ console.log("India")  
+}  
+fullname('ajay', country)  
+Output:  
+Helloe ajay  
+India  
+```
+### 3 - What is Closure in JavaScript? ###  
+A closure is a function that remember the variable from its **outer (lexical) scope**  
+even after the outer function has finished executing.  
+***A closure in JavaScript is the combination of a function and its lexical environment***
+
+
 
 
 
