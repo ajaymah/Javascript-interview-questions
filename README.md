@@ -107,7 +107,7 @@ function sayHellow(){
 var hellow = ()=>{  
 console.log("hellow")  
 }  
-// hellow is hoisted as undefined //
+// - hellow is hoisted as undefined //
 ```
 
 
