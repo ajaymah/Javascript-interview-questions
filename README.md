@@ -28,7 +28,7 @@ inside timeout
 
 ```
 ### 2- What is JavaScript Callback? ###  
-Callback is a function that passed as an arguments to another function;  
+- Callback is a function that passed as an arguments to another function;  
 **usecase** - To handle async task(Api calls, timmers).  
             - avoid blocking the main thread.
 ```
