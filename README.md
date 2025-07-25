@@ -3,7 +3,7 @@
 ### 1- What is event loop in JavaScript ###
 The event loop in JavaScript is a fundamental concept that enabled **non-blocking, asynchronous behaviour** - even through Javascript is **single-threaded**  
 
-**Simple terms** - Perform long task like Api Calls or timers *without freezing* the page
+**Simple terms** - Perform long task like Api Calls or timers *without freezing* the page  
 
 **How it works** JavaScript RunTime  
 ```
@@ -28,11 +28,11 @@ inside timeout
 
 ```
 ### 2- What is JavaScript Callback? ###  
-Callback is a function that passed as an arguments to another function;
+Callback is a function that passed as an arguments to another function;  
 **usecase** - To handle async task(Api calls, timmers).  
             - avoid blocking the main thread.
 ```
-**Example:**
+**Example:**  
 Function fullname (name, callBackFn){  
     console.log("Hellow ", name)  
     callBackFn()  
@@ -48,7 +48,8 @@ India
 ### 3 - What is Closure in JavaScript? ###  
 A closure is a function that remember the variable from its **outer (lexical) scope**  
 even after the outer function has finished executing.  
-***A closure in JavaScript is the combination of a function and its lexical environment***
+***A closure in JavaScript is the combination of a function and its lexical environment***  
+
 
 
 
