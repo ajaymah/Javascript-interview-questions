@@ -68,7 +68,7 @@ outerFunction();
 // console.log(outerVar); // Not accessible here (ReferenceError)  
 ```
 
-**why we use closures**  Create Private variables
+**why we use closures**  Create Private variables, **Data Privacy**
 
 > NOTE: 
 Data can be hidden from the global scope and only accessed or modified through specific, controlled functions returned by the outer function. 
