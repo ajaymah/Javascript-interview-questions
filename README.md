@@ -108,6 +108,11 @@ var hellow = ()=>{
 console.log("hellow")  
 }  
 - // hellow is hoisted as undefined //
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
 ```
 
 
