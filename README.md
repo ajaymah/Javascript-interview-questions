@@ -131,7 +131,63 @@ const newObj = { ...obj1, ...obj2 };
 > NOTE:  
 > Object.assign(target, ...sources)  
 > **target**: The target object to which source properties are copied.  
-> **sources**: One or more source objects from which properties are copied.  
+> **sources**: One or more source objects from which properties are copied.
+
+### 6- Multiple Api parallel calls in javascript what is good approach //
+If you need to process the results of successful calls even if some fail, or require specific error handling for each individual call, you can use Promise.allSettled() instead of **Promise.all()**. **Promise.allSettled()** returns a Promise that resolves after all the given Promises have either fulfilled or rejected, providing an array of objects describing the outcome of each Promise.  
+**Promise.allSettled() (Wait for All Outcomes):**   
+In summary:  
+**Promise.all():** All or nothing; rejects on first failure.  
+**Promise.allSettled():** Always resolves with the status of every promise, regardless of success or failure.  
+```
+const fetchData = async ()=>{
+    const URL1 = 'https://jsonplaceholder.typicode.com/users';
+    const URL2 = 'https://jsonplaceholder.typicode.com/todos';
+    const URL3 = 'https://jsonplaceholder.typicode.com/albums';
+    const apiUrls = [URL1,URL2, URL3];
+    try {
+      const res = await Promise.all(
+        apiUrls.map(url => fetch(url).then((res) => {
+           console.log(res.status)
+           return res.json()
+          })
+        )
+      );
+      console.log(res)
+    } catch (error){     
+    }     
+  }
+```
+```
+const fetchDataWithAllsettled = async ()=>{
+    const URL1 = 'https://jsonplaceholder.typicode.com/users';
+    const URL2 = 'https://jsonplaceholder.typicode.com/todosdd';
+    const URL3 = 'https://jsonplaceholder.typicode.com/albumsd';
+    const apiUrls = [URL1,URL2, URL3];
+    try {
+      const result = await Promise.allSettled(apiUrls.map(url=>
+         fetch(url).then((res)=> {
+          if(res.ok){
+             return res.json()
+          } else {
+            throw new Error(res.status)
+          }
+         
+        })
+      ))
+      result.map((result,ind)=>{
+        if(result.status ==='fulfilled'){
+          console.log(ind, result.value)
+        } else {
+          console.log(ind, result.reason.message)
+        }
+      })
+     
+    } catch (error){     
+      console.log(error)
+    }     
+  }
+```
 
 
 
