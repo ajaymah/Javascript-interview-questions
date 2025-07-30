@@ -110,6 +110,20 @@ console.log("hellow")
 }  
 - hellow is hoisted as undefined //
 ```
+### difference between object assign and spread operator ###
+**Object.assign()** - This method mutates the target object. It takes a target object as the first argument and one or more source objects as subsequent arguments.  
+``` const obj1 = { a: 1 };
+    const obj2 = { b: 2 };
+    Object.assign(obj1, obj2);
+  // obj1 is now { a: 1, b: 2 } //
+```
+**Spread Operator** - The object spread operator creates a new object. It copies the enumerable own properties from the source objects into a new object, leaving the original objects unchanged.  
+``` const obj1 = { a: 1 };
+    const obj2 = { b: 2 };
+    const newObj = { ...obj1, ...obj2 };
+   // newObj is { a: 1, b: 2 }, obj1 and obj2 are unchanged //
+```
+
 
 
 
