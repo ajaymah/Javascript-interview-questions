@@ -73,7 +73,7 @@ outerFunction();
 > NOTE: 
 Data can be hidden from the global scope and only accessed or modified through specific, controlled functions returned by the outer function.
 
-### What is Hoisting in JavaScript? ###   
+### 3 - What is Hoisting in JavaScript? ###   
 Hoisting is JavaScript default behaviour of moving declerations to the top (before code eecution)  
 ***variables and functions are hoisted - declared before any code is executed***  
 But Only the **declarations** are hoisted, not the **initialization**.    
@@ -110,7 +110,7 @@ console.log("hellow")
 }  
 - hellow is hoisted as undefined //
 ```
-### difference between object assign and spread operator ###
+### 4 - difference between object assign and spread operator ###
 **Object.assign()** - This method mutates the target object. It takes a target object as the first argument and one or more source objects as subsequent arguments.  
 ``` const obj1 = { a: 1 };
     const obj2 = { b: 2 };
@@ -123,7 +123,13 @@ console.log("hellow")
     const newObj = { ...obj1, ...obj2 };
    // newObj is { a: 1, b: 2 }, obj1 and obj2 are unchanged //
 ```
-
+### 5 - difference between object assign and object create ###
+**Object.create(**) - Creates a new object with a specified prototype object  
+**Object.assign()** - Copies enumerable own properties from one or more source objects to a target object  
+> NOTE:  
+> Object.assign(target, ...sources)  
+> **target**: The target object to which source properties are copied.  
+> **sources**: One or more source objects from which properties are copied.  
 
 
 
