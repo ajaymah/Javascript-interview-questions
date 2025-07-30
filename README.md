@@ -120,10 +120,10 @@ Object.assign(obj1, obj2);
 ```
 **Spread Operator** - The object spread operator creates a new object. It copies the enumerable own properties from the source objects into a new object, leaving the original objects unchanged.  
 ```diff
-    const obj1 = { a: 1 };
-    const obj2 = { b: 2 };
-    const newObj = { ...obj1, ...obj2 };  
-   ! // newObj is { a: 1, b: 2 }, obj1 and obj2 are unchanged //
+const obj1 = { a: 1 };
+const obj2 = { b: 2 };
+const newObj = { ...obj1, ...obj2 };  
+! // newObj is { a: 1, b: 2 }, obj1 and obj2 are unchanged //
 ```
 ### 5 - difference between object assign and object create ###
 **Object.create(**) - Creates a new object with a specified prototype object  
