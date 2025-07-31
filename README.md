@@ -189,6 +189,17 @@ const fetchDataWithAllsettled = async ()=>{
   }
 ```
 
+### 7- What Is Implicit ###  
+Implicit Type Coercion (or Implicit Type Conversion): This is the automatic conversion of one data type to another by the JavaScript engine during an operation. This often happens when operators are used with operands of different data types.
+```
+**Example**:  
+let result = "5" + 2; // The number 2 is implicitly converted to the string "2"  
+console.log(result); // Output: "52" (string concatenation)  
+
+let value = "10" - 5; // The string "10" is implicitly converted to the number 10  
+console.log(value); // Output: 5 (numeric subtraction)  
+```
+
 
 
 
