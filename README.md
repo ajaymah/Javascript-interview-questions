@@ -46,6 +46,7 @@ Helloe ajay
 India  
 ```
 ### 3 - What is Closure in JavaScript? ###  
+Closures are functions that have access to variables from an outer function even after the outer function has finished executing. They “remember” the environment in which they were created  
 A closure is a function that remember the variable from its **outer (lexical) scope**  
 even after the outer function has finished executing.  
 ***A closure in JavaScript is the combination of a function and its lexical environment***  
@@ -72,6 +73,7 @@ outerFunction();
 
 > NOTE: 
 Data can be hidden from the global scope and only accessed or modified through specific, controlled functions returned by the outer function.
+> 
 
 ### 3 - What is Hoisting in JavaScript? ###   
 Hoisting is JavaScript default behaviour of moving declerations to the top (before code eecution)  
@@ -229,7 +231,53 @@ const person = {
 const greeting = person.greet
 const boundFn = greeting.bind(person)
 ```
+### 13-  What Is Recursion in JavaScript? ###  
+Recursion is a programming technique that allows a function to call itself. Recursion can be used to solve a variety of problems,   
 
+### 14- Explain the Concept of Prototypes in JavaScript. ###
+Prototypes are a mechanism used by JavaScript objects for inheritance. Every JavaScript object has a prototype, which provides properties and methods that can be accessed by that object.  
+```
+function person(name){
+   this.name = name
+}
+person.prototype.greet = function(){
+   console.log(this.name)
+}
+const personName = new person('Ajay')
+person.greet()
+```
+
+### 15- Explain WeakMap and WeakSet in JavaScript ###
+WeakMap in JavaScript allows you to store **key-value pairs** where the keys must be **objects**, and the references to these keys are "weak." This means that if an object used as a key in a WeakMap is no longer referenced elsewhere in your code, it can be garbage-collected, and the corresponding entry in the WeakMap will also be automatically removed.  
+```
+// Create some objects to use as keys
+let user1 = { id: 1, name: "Alice" };
+let user2 = { id: 2, name: "Bob" };
+
+// Set values associated with the object keys
+weakMap.set(user1, "Admin");
+weakMap.set(user2, "Editor");
+
+// Retrieve values
+console.log(weakMap.get(user1)); // Output: Admin
+console.log(weakMap.get(user2)); // Output: Editor
+```
+**Weekset**
+A JavaScript WeakSet stores a collection of unique objects, similar to a Set, but with a key difference: it holds weak references to its elements. This means that if an object stored in a WeakSet is no longer referenced anywhere else in the code, it can be garbage-collected, and automatically removed from the WeakSet.  
+```
+// Create a new WeakSet
+const myWeakSet = new WeakSet();
+
+// Create some objects
+let obj1 = { id: 1, name: "Object One" };
+let obj2 = { id: 2, name: "Object Two" };
+const obj3 = { id: 3, name: "Object Three" }; // obj3 will always be referenced
+
+// Add objects to the WeakSet
+myWeakSet.add(obj1);
+myWeakSet.add(obj2);
+myWeakSet.add(obj3);
+```
 
 
 
