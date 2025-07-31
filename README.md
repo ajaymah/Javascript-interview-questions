@@ -199,7 +199,36 @@ console.log(result); // Output: "52" (string concatenation)
 let value = "10" - 5; // The string "10" is implicitly converted to the number 10  
 console.log(value); // Output: 5 (numeric subtraction)  
 ```
+### 8- What Is the NaN Property in JavaScript? ###  
+The NaN property in JavaScript stands for “Not a Number,” and is used to represent a value that is not a legal number or is undefined. The isNaN() function is used to check whether a value is NaN, and first converts the given value into a Number type if necessary.  
 
+### 9- Pass by Value and Pass by Reference in JavaScript ###  
+In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.  
+
+### 10- IIFE ###  
+Immediately Invoked Function Expression (IIFE) is a function that runs as soon as it is defined. An IIFE involves having a function expression enclosed in parenthesis and then immediately calling the function expression.  
+```
+Example:
+(function() {
+  var message = "Hello from inside the IIFE!";
+  console.log(message); // Output: Hello from inside the IIFE!
+})();
+```
+### 11-  What Is “strict” mode in JavaScript and How Is It Enabled? ###  
+Strict mode in JavaScript is a feature in ECMAScript 5 that allows you to write code or a function in a “strict” operational environment. In strict mode, certain code actions are prevented (such as not being allowed to create global variables or use duplicate arguments) and more errors/exceptions will be thrown, making debugging code easier to handle. Strict mode in JavaScript can be enabled by adding the "use strict" statement at the top of code or a function.   
+
+### 12- What Is the Purpose of the bind() Method in JavaScript? ###  
+The bind() method is used to create a new function with a specified this value and an initial set of arguments. It allows you to set the context of a function permanently.  
+```
+const person = {
+   name:"Ajay",
+   greet: function(){
+   console.log("Hi " + this.name)
+   }
+}
+const greeting = person.greet
+const boundFn = greeting.bind(person)
+```
 
 
 
