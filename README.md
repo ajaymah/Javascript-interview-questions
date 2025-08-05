@@ -325,5 +325,63 @@ function sayHelloWorld() {
 }
 +console.log(sayHelloWorld()); //Goodbye, World!
 ```
+```
+function Parent() {}
+function Child() {}
+Child.prototype = new Parent();
+var obj = new Child();
+console.log(obj instanceof Parent); // Output: true;
+```
+```
+var x = 10;
+function testValue() {
+  console.log(x);
+  var x = 20;
+}
+testValue(); // Output: undefined;
+```
+```
+function Person(name) {
+  this.name = name;
+}
 
+Person.prototype.greet = function() {
+  return "Hello, my name is " + this.name;
+};
+
+var person1 = new Person("Lokesh Prajapati");
+var person2 = new Person("Lucky");
+
+console.log(person1.greet === person2.greet); // Output: true;
+```
+```
+function sayHi() {
+  return hi;
+  var hi = "Hello, World!";
+}
+console.log(sayHi()); // Output: undefined.
+```
+```
+var x = 5;
+function outer() {
+  var x = 10;
+  function inner() {
+    console.log(x);
+  }
+  return inner;
+}
+var finalResult = outer();
+finalResult(); //10
+```
+```
+var x = 10;
+function testNum() {
+  console.log(x);
+  if (true) {
+    var x = 20;
+  }
+  console.log(x);
+}
+testNum(); // 20
+```
 
