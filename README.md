@@ -304,6 +304,7 @@ var name = "Lokesh Prajapati";
   console.log(name);
   var name = "Lokesh Prajapati";
 })(); // Output: undefined;
++the var name declaration inside the function is hoisted to the top of the function scope.
 ```
 
 
