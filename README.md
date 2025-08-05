@@ -296,4 +296,14 @@ Tasks are executed one after the other
 **Asynchronous** : Operations can start and run independently. The system can continue with other tasks while waiting for the asynchronous operation to complete.  
 Allows you to perform operations like fetching data from a server without blocking the rest of your code.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+### What was the output ###
+```diff
+var name = "Lokesh Prajapati";
+(function() {
+  console.log(name);
+  var name = "Lokesh Prajapati";
+})(); // Output: undefined;
+```
+
 
