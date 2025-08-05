@@ -278,7 +278,17 @@ myWeakSet.add(obj1);
 myWeakSet.add(obj2);
 myWeakSet.add(obj3);
 ```
+### What is Async and defer ###
+**Async**  
+When we include a script with the **async attribute**, it tells the browser to download the script asynchronously while parsing the HTML document. The script is downloaded in the background without blocking the HTML parsing process.  
+Once the script is downloaded, it's executed asynchronously, meaning it can run at any time, even before the HTML document has finished parsing.  
+**Defer**  
+When we include a script with the defer attribute, it also tells the browser to download the script asynchronously while parsing the HTML document.  
+The script's execution is deferred until the HTML document has been fully parsed and the DOM is ready  
 
+**When to Use Which:**  
+- Use async for scripts that are self-contained and don't depend on the DOM or other scripts for their functionality.  
+ - Use defer for scripts that need access to the fully parsed DOM or have dependencies on other scripts and require a specific execution order.  
 
 
 
