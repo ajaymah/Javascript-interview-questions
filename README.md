@@ -293,5 +293,7 @@ The script's execution is deferred until the HTML document has been fully parsed
 **Synchronous** : Each operation waits for the previous one to complete before starting. This can lead to delays and reduced responsiveness.  
 Tasks are executed one after the other  
 
+**Asynchronous** : Operations can start and run independently. The system can continue with other tasks while waiting for the asynchronous operation to complete.  
+Allows you to perform operations like fetching data from a server without blocking the rest of your code.
 
 
