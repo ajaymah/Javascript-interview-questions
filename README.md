@@ -306,5 +306,24 @@ var name = "Lokesh Prajapati";
 })(); // Output: undefined;
 +the var name declaration inside the function is hoisted to the top of the function scope.
 ```
+```
+var x = 1;
+if (function test() {}) {
+  x += typeof test;
+}
+console.log(x); // Output: 1undefined;
+```
+```diff
+function sayHelloWorld() {
+  return sayGoodbyWorld();
+  var sayGoodbyWorld = function() {
+    return "Hello, World!";
+  };
+  function sayGoodbyWorld() {
+    return "Goodbye, World!";
+  }
+}
++console.log(sayHelloWorld()); //Goodbye, World!
+```
 
 
