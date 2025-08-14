@@ -445,7 +445,27 @@ console.log(a())
 console.log(a())
 
 createDomStr()
-
-
+```
+### promise with timer return array[1,2,3] ###
+```diff
+const pr = function(){
+    return new Promise((resolve)=>{
+      let arr = [];
+      let countVar = 1
+      let timer = setInterval(() => {
+        arr.push(countVar)
+        countVar++     
+        //console.log(arr)   
+        if(arr.length === 3){
+         clearInterval(timer);
+         resolve(arr)
+      }  
+      }, 1000);      
+    })
+     
+  }
+  const a = pr().then((res)=>{
+    console.log(res) /// [1,2,3]
+  }
 ```
 
