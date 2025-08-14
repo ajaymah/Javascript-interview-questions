@@ -386,7 +386,7 @@ testNum(); // 20
 ```
 
 ### Create a div structre by vanila javascript ###
-```
+```diff
 function createDomStr (){
 let data = [
 {heading:"Test Heading1", des:"tesing1", buttonText:"Check Offer"},
