@@ -385,3 +385,67 @@ function testNum() {
 testNum(); // 20
 ```
 
+### Create a div structre by vanila javascript ###
+```
+function createDomStr (){
+let data = [
+{heading:"Test Heading1", des:"tesing1", buttonText:"Check Offer"},
+{heading:"Test Heading2", des:"tesing1 ", buttonText:"Check Calculation"},
+{heading:"Test Heading3", des:"tesing123", buttonText:"Smart Offer"},
+{heading:"Test Heading4", des:"tesing123", buttonText:"Smart Offer"},
+{heading:"Heading5", des:"tesing123", buttonText:"Smart Offer"}
+]
+let divId = document.getElementById("wrapper");
+let htmlc = "<p> Lorem Ipsum Doler sit here, <strong>Click Here</strong>"
+data.forEach((elm)=>{
+let section = document.createElement("div");      
++let h2 = document.createElement("h2");
+let p = document.createElement("p");
+let button = document.createElement("button");
+section.classList.add("test")
+section.appendChild(h2)
+section.appendChild(p)
+section.appendChild(button)
++h2.innerText = elm.heading // add text //
++p.textContent = elm.des // add text //
+
+button.innerText = elm.buttonText;  
++button.style.color = "rgb(0, 0, 0)";
+button.style.background = "rgb(255, 0, 0)"
+button.style.border = "0px";
+divId.appendChild(section);
+if(elm.heading == "Test Heading2"){
+let p1 = document.createElement("p");
+section.appendChild(p1)
++p1.innerHTML = htmlc
+}
+})
+/////////////
+let x = document.querySelectorAll("button");
+x.forEach((a)=>{
++a.addEventListener("click", ()=>{
+a.style.color = a.style.color == "rgb(0, 0, 0)" ? "#ff0000" : "#000000";
+a.style.background = a.style.background == "rgb(0, 0, 0)" ? "#ff0000" : "#000000"
+})
+///////////
+})
+}
+
+function outer(){
+let count = 0;
+function inner(){
+count++
+return count
+}
+return inner
+}
+let a = outer();
++console.log(a())
+console.log(a())
+console.log(a())
+
+createDomStr()
+
+
+```
+
