@@ -496,4 +496,11 @@ console.log(searchwithDbounce("Hello"))
 
 <a href="https://flems.io/#0=N4Igxg9gdgzhA2BTEAucD4EMAONEBMQAaEAMwEskZUBtUKTAW2TQDoALAF0fmPSk6IBqECAC+RekxYhWAK2olIAoZxGkArlDCdy0AASd2AJwidOSABSkoRffkRYAngEp9wADpR9P-Uk5+mDCcACrkzPoAvPoADADcXr76xoicGsbemtq6Bpas+ZjGAOYwbp7eSb7++lAQAO5R+gAimIKstXWWLgkVlfrkpPqWHfoAtIHBYREAfNEOzmWJfZU2eQXFpT3LlViT4YiNHVvLYks+Yj2nUF7Kwfp4hWBFAIoaiMZOjZYAbpjwby5ItN3EtbghEKx4BAij8-gCvFcbtA7g9jGB2HVyEYmgAjCBaMAHaJGUzmKyop6vd5OIgARhiDO6SNg4Mh0MsFIxWPYuPx2kQlgA5Jg5JhPvggoNSIKXC4vF5MVB8PVWJh8PgAKLfVQAGXIwSE7yFKRg5AAXohBXYSWYLAKulFgeUkmCkGyYYKAEqIU0W-SIbUCQzGchFIrvAgAQhllyIAFYGTFZT0vHw8EgdHpYCIAEwxFAAZnEkhADGYIlYYBgin4gmEaHEAF0xEA">Click</a>
 
+### OOJS core cocept ###
+core concept - 
+**Encapsulation:** Bundles data and methods that operate on that data within a single unit (an object) and hides the internal details from the outside world. 
+**Inheritance:** Enables a new class (subclass or derived class) to inherit properties and  methods from an existing class (superclass or base class).  
+**Polymorphism:** Means "many forms."  it allows objects of different classes to be treated as objects of a common type. This  
+**Abstraction:** Simplifies complex reality by modeling classes based on essential properties relevant to the program. It hides unnecessary details and presents a simplified view of an object, making the code easier to understand and use.  
+
 
