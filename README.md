@@ -473,4 +473,24 @@ const pr = function(){
 ###  lighthouse chrome extension ###
 Lighthouse is a free, open-source, automated tool by Google for improving the quality of web pages. It's available as a Chrome extension and within Chrome DevTools, and can also be used as a Node module. Lighthouse audits web pages for performance, accessibility, SEO, and other best practices, providing detailed reports with suggestions for improvement. 
 
+### debouncing and throttling in javascript ###
+timer is reset after every 1 second  
+<a href ="https://flems.io/#0=N4IgZglgNgpgziAXAbVAOwIYFsZJAOgAsAXLKEAGhAGMB7NYmBvEAXwvW10QICsEqdBk2J4wAVzTViEegAIAJjABGtSdRgAKMGgqKYUDAE8AlMAA6aOXNjE5MnBAUBuS9YBOMYuPdWJUmXlNfBCMdwBzODM3azlqWDCAFQgcNWJNBxgnE1crWMynOQBeOTgvZNTxdM0TIoA+CzzYuR1g0IiomOt2JUNTZpjWSyG0SyE4OzKw6nCARXEYdyNiuU0ANwwoBdq6uUbrcdpYfChacPXN7eHLMfoJ0phpwgB3CGJCABFVdRgVpW+pFopu4ZvNFkY9ABGAAMsJytzQcCOMBOZ00wOoLzenwBGk05hAhCcChJCgJJhMCKRx1O5wxWPeXzUgPxhOJpPJlKkd2RqLpjxBDJxzLxBKJpJJnKpvNp6IFmNejNxWjF7MlIAplBAZVg0lkiLw0MQ0IAtJCAByIAAskLYHBAmBweHw1DgAho9EYzB4bAAuqwgA">click</a>
+```function debounce(fn, delay){
+  let timeid;
+  return function (...args){
+    clearTimeout(timeid);
+    timeid = setTimeout(()=>{
+      fn(...args)
+    },delay)    
+  }
+}
+const searcgQuery = (value)=> {
+  console.log(value)
+}
+const searchwithDbounce = debounce(searcgQuery, 1000);
+console.log(searchwithDbounce("Hi"))
+console.log(searchwithDbounce("Hello"))
+```
+
 
