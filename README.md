@@ -470,4 +470,7 @@ const pr = function(){
     console.log(res) /// [1,2,3]
   }
 ```
+###  lighthouse chrome extension ###
+Lighthouse is a free, open-source, automated tool by Google for improving the quality of web pages. It's available as a Chrome extension and within Chrome DevTools, and can also be used as a Node module. Lighthouse audits web pages for performance, accessibility, SEO, and other best practices, providing detailed reports with suggestions for improvement. 
+
 
