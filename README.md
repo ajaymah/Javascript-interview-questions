@@ -503,4 +503,18 @@ core concept -
 **Polymorphism:** Means "many forms."  it allows objects of different classes to be treated as objects of a common type. This  
 **Abstraction:** Simplifies complex reality by modeling classes based on essential properties relevant to the program. It hides unnecessary details and presents a simplified view of an object, making the code easier to understand and use.  
 
+### fatcorial of 5 ###
+```
+function fatctorialVal(n) {
+  // Base case: The factorial of 0 is 1.
+  if (n === 0) {
+    return 1;
+  } lse {
+    return n * fatctorialVal(n - 1);
+  }
+}
+console.log(fatctorialVal(5))
+console.log(5*4*3*2*1, "d")
+```
+
 
