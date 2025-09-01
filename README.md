@@ -517,4 +517,45 @@ console.log(fatctorialVal(5))
 console.log(5*4*3*2*1, "d")
 ```
 
+### Recurson create a chart ###
+```diff
+const data = [{
+  name: "CEO",
+  children: [
+    {
+      name: "CTO",
+      children: [
+        {
+          name: "Dev Manager",
+          children: [{ name: "Developer 1" }, { name: "Developer 2" }],
+        },
+      ],
+    },
+    { name: "CFO" },
+    {
+      name: "COO",
+      children: [{ name: "Operations Manager" }],
+    },
+  ],
+},{
+  name: "CEO1",
+  children: []
+}];
+
+function Recurson(data, parentID){
+  let parent = document.getElementById(parentID)
+  data.forEach((item)=>{
+     let div = document.createElement("div");    
+     div.textContent = item.name
+     div.setAttribute("id", item.name)
+     parent.appendChild(div)
+     if(item.children && item.children.length > 0){
+        Recurson(item.children, item.name);
+     } 
+  })
+}
+Recurson(data, "menu") 
+
+```
+
 
