@@ -561,6 +561,9 @@ Recurson(data, "menu")
 
 <a href="https://onecompiler.com/javascript/43w7wgxxr" target="_blank"> Click Here </a>
 
+### 20 - Jvascript Prototype Costructor ###   
+<a href="https://onecompiler.com/javascript/43w7wxkdm" target="_blank">Click Here </a>
+
 
 
 
