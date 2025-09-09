@@ -385,7 +385,7 @@ function testNum() {
 testNum(); // 20
 ```
 
-### Create a div structre by vanila javascript ###
+### 14 Create a div structre by vanila javascript ###
 <a href="https://flems.io/#0=N4IgtglgJlA2CmIBcAWA7AOgBwEYA0IAzgMYBOA9rLMgNoAMedAugQGYQKG2gB2AhmERIQGABYAXMNQLFyPcfHnIQAHigQAbgAJoAXgA6IAO6k+ABzPxShgHz6eWrfZUB6dRpsgCheAmLiIOS5hOiQATgBaUJwANhAAXzxeASERACsuGTkFJWFWAFcef0CHMng+BQARcjAAZXFSLQAKAEpge0ctBHEtKAq+LV0tGg7O4FFy9R4AcyRDABV4Qh6ACUmIGZxDPF6luZAFQg3pra8tACN88XE5RYAPcX2AYQniAGstAHlWVitDRNGjnG6xm+0Wyy0az4U2mACZtrtCPtDsccE4zpdrrd4A9nq8Pk8+LBiPlYBUSv88ICtMDoccwUtViDpgBmBFQPaGFGbWFsjFXG48e6PQy1MB8Ug9b6-awJKkOTo0iZ00ELRmQ5kodmcg5LVG8hGYwXC-ZiiVSn5-OXUoHKmH7KEwgCs2qRXL1PL5OyN2NxovFkq+ltl8WpTGp3V6mgAklBBr1yCTBPIMNN4OIAKIIZPiABCAE9Y01DCZzJZZS0ANwR9NaCRSYjxwwqMw2LQAGXIpHgYC00bMhHyveqCEaRx6E27OxUywoMxsT1gEHeGu7rlncmmdhA1L64j4GFYXYzfGIoiaTV8YBauhs7QVisjPmKcnjUETQ8U4gwZQq8CzPZfsWIDuIYVaKo4NpdLWoiwm+H45j+3Z-gBObAbBYHVg+nSRmY8FJl+SHlAoqFAYYZiYVBkY+g4QzvgRKa-iR2ZkSANGUdhjjPgEcg-mShCEO2EDLBg0JQMBhziGBUHcSUokWIoUAvBw4mwS0MnwC+PDyZYPBKaIKlNGY6mcVosm8WWinKbA4k0SZEF1rCGAbDwVjCvGV5iMyWguC4WhiVoCgPD5LhQWYGBBeITzZF+HmwGAGAcoQIX+TAgU4j0vlQVBNHOTwrmkO5QyeTRwqVpBpm5cs+YID+lBdk2ICkNM5xNAwWjtXQ6kgFhDlVeINXwBg5ynm80wUIUcZDIYzWtbCTpOjsnXdTlAq8dVtXnF2HKNNNIB0GYdyGL1EHuLGOlWQZNlNOZPBVlBECsJe8VeSq0yDHt4JMm98IgG0UE4bWZhonRCGEUx-4sfIwEUX9J0OWZmk8dpll6dZ4nA-ZCNaMDeUFSs8wALLtvG9bElBobYfELRONhkZ3Phn4pgAjvkVj5rUvhI12ACCVDAexcOjNSdyHsep7nk0fA3neUEHmJGYaF+QnLIoVjAcQS7vAirS3veCMHhtQ2yLADVDIbA21SbZt7bNbVLUt3VaAA-OiADEPx0F7dCGFoSDu973vHQD-kYEbw2jeN5CTfGFuDRH7xRzHui2y19sdY7vuu4YHusIHvv+zngde4YFNY441PUrIPCEJQQ2m9MrTCzwlP2AURTI1o0cKKQrT69BPSyIUPRDHQJ3t1pOj5er-0PkP8gANQL4C3biPkpClNH8ijJTjir+vDguX8Lf2JGAxDN3M9YdXte1Q3UutCZN91xg998I-9jP3f5CN+-LQmZ-ZCVQaj1F7gAngXgiBcy0sEfaSA6ARBiKEOgcpkiCGUD+ASkDq45HEMoN2pYFKNH7kYaA4hRBIBwF7AApCdCYEBpgSCQHwK45ATpbVIDteBh0zKUGgFoXOgcTrqEIGYMk+YkCsAQHcce0iIiEP9oQk6ZgxL0gOjI0Y0xzCUPUSdSKEQiQMJ4EgYgX4rBYUpu4CKjJ+70MYY8FhNx2HbSsEgJ0PDb78LdjAKAyjVGgioYdWROJ-Z0A6loYgRJiBNBZCyDAsTYnUK0BELQgS7j3QVFtO4EQjgAC96QcJ2hELJ5VaaUxov3EkpBa6kCQGYcgGwe4WPsAAAUEOoAYTRIA8HkWQihHVDo0z4HpZo4psmkKgOQ-2TovaDJpKMKxkl5kPikSE8JYTInEiaFQugSSUlpIyRXewlM2nwA6aMjYvTJn9JmTgOZwy4xdL4OMvp-s0CwnUTTfuiz1T9y0Ksu4oTwmbOiTMvZqTPknUpvESBPg-DI1gbCFAlCEhMHiEAA">click</a>
 ```diff
 function createDomStr (){
@@ -470,10 +470,10 @@ const pr = function(){
     console.log(res) /// [1,2,3]
   }
 ```
-###  lighthouse chrome extension ###
+### 15  lighthouse chrome extension ###
 Lighthouse is a free, open-source, automated tool by Google for improving the quality of web pages. It's available as a Chrome extension and within Chrome DevTools, and can also be used as a Node module. Lighthouse audits web pages for performance, accessibility, SEO, and other best practices, providing detailed reports with suggestions for improvement. 
 
-### debouncing and throttling in javascript ###
+### 15 debouncing and throttling in javascript ###
 timer is reset after every 1 second  
 <a href ="https://flems.io/#0=N4IgZglgNgpgziAXAbVAOwIYFsZJAOgAsAXLKEAGhAGMB7NYmBvEAXwvW10QICsEqdBk2J4wAVzTViEegAIAJjABGtSdRgAKMGgqKYUDAE8AlMAA6aOXNjE5MnBAUBuS9YBOMYuPdWJUmXlNfBCMdwBzODM3azlqWDCAFQgcNWJNBxgnE1crWMynOQBeOTgvZNTxdM0TIoA+CzzYuR1g0IiomOt2JUNTZpjWSyG0SyE4OzKw6nCARXEYdyNiuU0ANwwoBdq6uUbrcdpYfChacPXN7eHLMfoJ0phpwgB3CGJCABFVdRgVpW+pFopu4ZvNFkY9ABGAAMsJytzQcCOMBOZ00wOoLzenwBGk05hAhCcChJCgJJhMCKRx1O5wxWPeXzUgPxhOJpPJlKkd2RqLpjxBDJxzLxBKJpJJnKpvNp6IFmNejNxWjF7MlIAplBAZVg0lkiLw0MQ0IAtJCAByIAAskLYHBAmBweHw1DgAho9EYzB4bAAuqwgA">click</a>
 ```function debounce(fn, delay){
@@ -503,7 +503,7 @@ core concept -
 **Polymorphism:** Means "many forms."  it allows objects of different classes to be treated as objects of a common type. This  
 **Abstraction:** Simplifies complex reality by modeling classes based on essential properties relevant to the program. It hides unnecessary details and presents a simplified view of an object, making the code easier to understand and use.  
 
-### fatcorial of 5 ###
+### 17- fatcorial of 5 ###
 ```
 function fatctorialVal(n) {
   // Base case: The factorial of 0 is 1.
@@ -517,7 +517,7 @@ console.log(fatctorialVal(5))
 console.log(5*4*3*2*1, "d")
 ```
 
-### Recurson create a chart ###
+### 18- Recurson create a chart ###
 ```diff
 const data = [{
   name: "CEO",
@@ -557,5 +557,8 @@ function Recurson(data, parentID){
 Recurson(data, "menu") 
 
 ```
+### 19- Call Apply and Bind ###  
+<a href="https://onecompiler.com/javascript/43w7wgxxr" target="_blank">Click Here</a>   
+
 
 
