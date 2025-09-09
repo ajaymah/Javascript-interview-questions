@@ -558,7 +558,7 @@ Recurson(data, "menu")
 
 ```
 ### 19- Call Apply and Bind ###  
-<a href="https://onecompiler.com/javascript/43w7wgxxr" target="_blank">Click Here</a>   
+<a href="https://onecompiler.com/javascript/43w7wgxxr" target="_blank"> Click Here </a>   
 
 
 
