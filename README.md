@@ -68,6 +68,21 @@ function outerFunction() {
 outerFunction();  
 // console.log(outerVar); // Not accessible here (ReferenceError)  
 ```
+```
+function outer(){
+      let count =0;
+      function inner (){
+        count++
+        return count;
+      }
+      return inner;
+  }
+
+  const count1 = outer()
+  console.log(count1())
+ console.log(count1())
+ console.log(count1())
+```
 
 **why we use closures**  Create Private variables, **Data Privacy**
 
