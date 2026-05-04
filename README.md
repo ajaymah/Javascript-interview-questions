@@ -633,6 +633,17 @@ function removeOverlapTime(intervals){
 }
 console.log(removeOverlapTime(data))
 ```
+### Factorial of 5 ###
+```
+function factorialfn(n){
+    if(n==0){
+      return  n = 1
+    } else {
+       return n * factorialfn(n -1) 
+    }
+}
+console.log(factorialfn(4))
+```
 
 
 
