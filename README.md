@@ -741,6 +741,26 @@ let outputdata = products.reduce((acc, item)=>{
 },{});
 console.log(outputdata)
 ```
+### exersize ###
+```
+const data = [
+  { user: "A", orders: [100, 200] },
+  { user: "B", orders: [50] },
+  { user: "A", orders: [300] }
+];
+const output = {
+  A: 600,
+  B: 50
+}
+let outputdata = data.reduce((acc, item)=>{
+    if(!acc[item.user]){
+      acc[item.user] = 0  
+    }
+     acc[item.user] =  acc[item.user] + item.orders.reduce((a, b)=> a + b, 0)
+    return acc;
+},{})
+console.log(outputdata)
+```
 
 
 
