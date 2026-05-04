@@ -874,6 +874,39 @@ const x = products.reduce((acc, item)=>{
 console.log(x)
 ```
 
+### ex ####
+```
+const users = [
+  { id: 1, name: "Ajay" },
+  { id: 2, name: "Rahul" }
+];
+
+const orders = [
+  { userId: 1, amount: 100 },
+  { userId: 1, amount: 200 },
+  { userId: 2, amount: 300 }
+];
+
+const output = [
+  { id: 1, name: "Ajay", orders: [100, 200] },
+  { id: 2, name: "Rahul", orders: [300] }
+]
+const orderMap = orders.reduce((acc, item) => {
+  if (!acc[item.userId]) {
+    acc[item.userId] = [];
+  }
+  acc[item.userId].push(item.amount);
+  return acc;
+}, {});
+console.log(orderMap)
+const result = users.map(user => ({
+  id: user.id,
+  name: user.name,
+  orders: orderMap[user.id] || []
+}));
+console.log(result)
+```
+
 
 
 
