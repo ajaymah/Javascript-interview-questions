@@ -679,7 +679,7 @@ let outputData = users.reduce((acc, item)=>{
 
 console.log(outputData)
 ```
-### new ###
+### data formate exersize ###
 ```
 const employees = [
   { name: "A", dept: "IT", salary: 5000 },
@@ -699,6 +699,23 @@ const outputData = employees.reduce((acc, item)=>{
   return acc 
 },{})
 console.log(outputData)
+```
+### data exersize ###
+```
+const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+const output = {
+  apple: 3,
+  banana: 2,
+  orange: 1
+}
+let x = words.reduce((acc, item)=>{
+    if(!acc[item]){
+        acc[item] = 0
+    }
+     acc[item] = acc[item] + 1
+    return acc
+},{})
+console.log(x)
 ```
 
 
