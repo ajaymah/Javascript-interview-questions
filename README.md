@@ -612,6 +612,27 @@ console.log(a)
 const x = [11, [2, [31, 45], 14]];
 console.log(x.flat(Infinity));
 ```
+### overlap time example  ###  
+```
+var data = [[0,10],[10,20],[20,30],[25,30],[30,40],[40,50]]
+function removeOverlapTime(intervals){
+    intervals.sort((a, b) => a[0] - b[0]);
+    let result = [];
+    let current = intervals[0]
+   for (let i = 1; i < intervals.length; i++) {
+        let next = intervals[i];
+        console.log(next[0], current[0], next[1], current[1], next[1] <=  current[1])
+        if (next[0] >= current[0] && next[1] <= current[1]) {
+          
+        } else {
+            result.push(next);
+            current = next;
+        }
+   }
+    return result.length
+}
+console.log(removeOverlapTime(data))
+```
 
 
 
