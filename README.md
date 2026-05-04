@@ -655,6 +655,30 @@ function sumAll(...n){
 }
 console.log(sumAll(1,2,3,4)) // 10
 ```
+### data formate ###
+```
+const users = [
+  { id: 1, name: "Ajay", role: "admin" },
+  { id: 2, name: "Rahul", role: "user" },
+  { id: 3, name: "Neha", role: "admin" },
+  { id: 4, name: "Simran", role: "user" }
+];
+
+const output = {
+  admin: ["Ajay", "Neha"],
+  user: ["Rahul", "Simran"]
+}
+
+let outputData = users.reduce((acc, item)=>{
+ if(!acc[item.role]){
+     acc[item.role] = []
+ }
+ acc[item.role].push(item.name)
+ return acc
+},{})
+
+console.log(outputData)
+```
 
 
 
