@@ -795,6 +795,48 @@ let data = apiData.reduce((acc, item)=>{
    return acc; 
 },[])
 console.log(data)
+```
+### exersize ###
+```
+const flatData = [
+  { userId: "U1", name: "Ajay", orderId: 1, amount: 100 },
+  { userId: "U1", name: "Ajay", orderId: 2, amount: 200 },
+  { userId: "U2", name: "Rahul", orderId: 3, amount: 300 }
+];
+
+const output = [
+  {
+    userId: "U1",
+    name: "Ajay",
+    orders: [
+      { id: 1, amount: 100 },
+      { id: 2, amount: 200 }
+    ]
+  },
+  {
+    userId: "U2",
+    name: "Rahul",
+    orders: [{ id: 3, amount: 300 }]
+  }
+]
+let a = flatData.reduce((acc,item)=>{
+    let user = acc.find(u => u.userId === item.userId);
+    if (!user) {
+        user = {
+          userId: item.userId,
+          name: item.name,
+          orders: []
+        };
+        acc.push(user);
+    }
+    user.orders.push({
+    id: item.orderId,
+    amount: item.amount
+  });
+    return acc
+    
+},[])
+console.log(a)
 ```  
 
 
