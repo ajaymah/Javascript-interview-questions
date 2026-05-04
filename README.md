@@ -644,6 +644,17 @@ function factorialfn(n){
 }
 console.log(factorialfn(4))
 ```
+### SUM of NUMBERs ###
+```
+function sumAll(...n){
+    let total = 0
+    for (let num of n){
+        total+=num
+    }
+    return total;
+}
+console.log(sumAll(1,2,3,4)) // 10
+```
 
 
 
