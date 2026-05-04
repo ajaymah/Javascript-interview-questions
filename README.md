@@ -679,6 +679,27 @@ let outputData = users.reduce((acc, item)=>{
 
 console.log(outputData)
 ```
+### new ###
+```
+const employees = [
+  { name: "A", dept: "IT", salary: 5000 },
+  { name: "B", dept: "HR", salary: 3000 },
+  { name: "C", dept: "IT", salary: 4000 },
+  { name: "D", dept: "HR", salary: 2000 }
+];
+const output = {
+  IT: 9000,
+  HR: 5000
+}
+const outputData = employees.reduce((acc, item)=>{
+  if(!acc[item.dept]){
+      acc[item.dept] = 0
+  }
+  acc[item.dept] += item.salary 
+  return acc 
+},{})
+console.log(outputData)
+```
 
 
 
