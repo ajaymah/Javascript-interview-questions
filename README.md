@@ -837,7 +837,29 @@ let a = flatData.reduce((acc,item)=>{
     
 },[])
 console.log(a)
+```
+
+### remove duplicate ###  
+```
+const users = [
+  { id: 1, name: "A" },
+  { id: 2, name: "B" },
+  { id: 1, name: "A" }
+];
+const out = [
+  { id: 1, name: "A" },
+  { id: 2, name: "B" }
+]
+
+const x = users.reduce((acc, item)=>{
+   if (!acc.some(u => u.id === item.id)) {
+    acc.push(item);
+  }
+    return acc
+},[])
+console.log(x)
 ```  
+
 
 
 
