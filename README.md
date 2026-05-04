@@ -717,6 +717,30 @@ let x = words.reduce((acc, item)=>{
 },{})
 console.log(x)
 ```
+### data exersize ###
+```
+const products = [
+  { name: "Shirt", category: "clothing", price: 500 },
+  { name: "Jeans", category: "clothing", price: 1000 },
+  { name: "Phone", category: "electronics", price: 15000 },
+  { name: "Laptop", category: "electronics", price: 50000 }
+];
+
+const output = {
+  clothing: { total: 1500, count: 2 },
+  electronics: { total: 65000, count: 2 }
+}
+
+let outputdata = products.reduce((acc, item)=>{
+    if(!acc[item.category]){
+        acc[item.category] =  { total: 0, count: 0 }
+    }
+     acc[item.category].total = acc[item.category].total + item.price
+     acc[item.category].count = acc[item.category].count + 1
+    return acc
+},{});
+console.log(outputdata)
+```
 
 
 
