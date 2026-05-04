@@ -580,5 +580,39 @@ Recurson(data, "menu")
 <a href="https://onecompiler.com/javascript/43w7wxkdm" target="_blank">Click Here </a>
 
 
+### code example ###
+```
+const orders = [
+  { id: 1, customerId: 'A1', amount: 100, status: 'completed' },
+  { id: 2, customerId: 'A2', amount: 200, status: 'pending' },
+  { id: 3, customerId: 'A1', amount: 50, status: 'completed' },
+  { id: 4, customerId: 'A2', amount: 300, status: 'completed' },
+  { id: 5, customerId: 'A3', amount: 150, status: 'completed' }
+];
+Output = 
+{
+  A1: { totalAmount: 150, orderCount: 2 },
+  A2: { totalAmount: 300, orderCount: 1 },
+  A3: { totalAmount: 150, orderCount: 1 }
+}
+let a = orders.reduce((acc, item)=>{
+if(item.status == 'completed' ){
+    if(!acc[item.customerId]){
+        acc[item.customerId] = {totalAmount: 0, orderCount :0}
+    }
+    acc[item.customerId].totalAmount += item.amount
+    acc[item.customerId].orderCount += 1;
+    
+}
+    
+return acc
+},{})
+console.log(a)
+
+const x = [11, [2, [31, 45], 14]];
+console.log(x.flat(Infinity));
+```
+
+
 
 
