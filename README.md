@@ -858,7 +858,21 @@ const x = users.reduce((acc, item)=>{
     return acc
 },[])
 console.log(x)
-```  
+```
+### exersize ###  
+```
+const products = [
+  { name: "Phone", price: 20000 },
+  { name: "Laptop", price: 50000 },
+  { name: "Tablet", price: 15000 }
+];
+const output = ["Laptop", "Phone", "Tablet"]
+const x = products.reduce((acc, item)=>{
+    acc.push(item.name)
+    return acc;
+},[])
+console.log(x)
+```
 
 
 
